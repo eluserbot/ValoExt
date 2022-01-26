@@ -48,7 +48,7 @@ TOGGLEKEY          = 'F6'
 SWITCH_KEY         = 'ctrl + tab'
 GRABZONE_KEY_UP    = 'ctrl + up'
 GRABZONE_KEY_DOWN  = 'ctrl + down'
-MODS               = ('No Delay Full-Auto')
+MODS               = ('0.2s')
 
 
 class FoundEnemy(Exception):
@@ -64,7 +64,7 @@ class Config:
         'ToggleKey' : 'F6'
     }
 
-    def __init__(self, configName: str = 'config.json') -> None:
+    def __init__(self, configName: str = 'setting.json') -> None:
         self.configName = configName
         self.config     = None
 
@@ -139,11 +139,11 @@ class TriggerBot:
             self._last_reac = int((perf_counter() - start_time) * 1000)
             windll.user32.mouse_event(0x2, 0x0, 0x0, 0x0, 0x0), windll.user32.mouse_event(0x4, 0x0, 0x0, 0x0, 0x0)
 
-            if self._mode == 0: sleep(0.2)
-            elif self._mode == 1: sleep(0.2)
-            elif self._mode == 2: sleep(0.2)
-            elif self._mode == 3: sleep(0.2)
-            elif self._mode == 4: sleep(0.2)
+            if self._mode == 0: sleep(0.01)
+            elif self._mode == 1: sleep(0.01)
+            elif self._mode == 2: sleep(0.01)
+            elif self._mode == 3: sleep(0.01)
+            elif self._mode == 4: sleep(0.01)
             elif self._mode == 5: pass
 
 
