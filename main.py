@@ -35,8 +35,8 @@ from random import random
 from json import load, dump
 
 
-__author__   = 'R3nzTheCodeGOD'
-__version__  = 'v2.0.3'
+__author__   = 'Lyanne Official'
+__version__  = 'v2.0'
 
 
 S_HEIGHT, S_WIDTH  = ImageGrab.grab().size
@@ -107,7 +107,7 @@ class TriggerBot:
 
     def switch(self) -> None:
         Beep(200, 100)
-        if self._mode != 5: self._mode += 1
+        if self._mode != 1: self._mode += 1
         else: self._mode = 0
 
 
@@ -139,11 +139,11 @@ class TriggerBot:
             self._last_reac = int((perf_counter() - start_time) * 1000)
             windll.user32.mouse_event(0x2, 0x0, 0x0, 0x0, 0x0), windll.user32.mouse_event(0x4, 0x0, 0x0, 0x0, 0x0)
 
-            if self._mode == 0: sleep(0.1)
-            elif self._mode == 1: sleep(0.1)
-            elif self._mode == 2: sleep(0.1)
-            elif self._mode == 3: sleep(0.1)
-            elif self._mode == 4: sleep(0.1)
+            if self._mode == 0: sleep(0.2)
+            elif self._mode == 1: sleep(0.2)
+            elif self._mode == 2: sleep(0.2)
+            elif self._mode == 3: sleep(0.2)
+            elif self._mode == 4: sleep(0.2)
             elif self._mode == 5: pass
 
 
