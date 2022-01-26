@@ -1,7 +1,7 @@
 <p align="center">
     <img height=250 src=".assets/0.png" >
     <br>
-    <i>R3nzTheCodeGOD Valorant External Cheat</i>
+    <i>Valorant External Cheat</i>
 </p>
 
 <div align="center">
