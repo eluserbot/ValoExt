@@ -147,13 +147,18 @@ class TriggerBot:
             elif self._mode == 5: pass
 
 
-CACHED_TITLESCREEN = f"""
-{ f.renderText("Valorant Cheat")[:-3] }
-{ colored(" Created with ♥ by b0kch01! ", "grey", "on_white") }
-{ colored(" USE AT YOUR OWN RISK       ", "grey", "on_yellow") }
+def print_banner(bot: TriggerBot) -> None:
+    system('cls')
+    print(Style.BRIGHT + Fore.CYAN + f'{__author__} Valorant External Cheat {__version__}' + Style.RESET_ALL)
+    print('===== Control =====')
+    print('Cheat Ini Sudah Automatic Aktif')
+    print('===== Setting In Game =====')
+    print('Setting : Setting Video To Windows Fullscrent & Change Colour Enemy To Purple')
+    print('===== Information ====')
+    print('Cheat Triggerbot VIP By Lyanne Store')
+    print('Cheat VIP Triggerbot Lifetime')
 
-Enjoy! :)
-"""
+
 
 if __name__ == "__main__":
     _hash = sha256(f'{random()}'.encode('utf-8')).hexdigest()
