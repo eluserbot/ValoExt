@@ -147,19 +147,13 @@ class TriggerBot:
             elif self._mode == 5: pass
 
 
-def print_banner(bot: TriggerBot) -> None:
-    system('cls')
-    print(Style.BRIGHT + Fore.CYAN + f'{__author__} Valorant External Cheat {__version__}' + Style.RESET_ALL)
-    print('====== Controls ======')
-    print('Trigger Key          :', Fore.YELLOW + f'{f"HoldKey [{HOLDKEY}]" if IS_HOLDKEY else f"ToggleKey [{TOGGLEKEY}]"}' + Style.RESET_ALL)
-    print('Mode Change Key      :', Fore.YELLOW + SWITCH_KEY + Style.RESET_ALL)
-    print('Grab Zone Change Key :', Fore.YELLOW + GRABZONE_KEY_UP + '/' + GRABZONE_KEY_DOWN + Style.RESET_ALL)
-    print('===== Information ====')
-    print('Mode                 :', Fore.CYAN  + MODS[bot._mode] + Style.RESET_ALL)
-    print('Grab Zone            :', Fore.CYAN  + str(GRABZONE) + 'x' + str(GRABZONE) + Style.RESET_ALL)
-    print('Trigger Status       :', Fore.GREEN + f'{f"Hold down the [{HOLDKEY}] key" if IS_HOLDKEY else "Active" if IS_RUNING else Fore.RED + "Passive"}' + Style.RESET_ALL)
-    print('Last React Time      :', Fore.CYAN  + str(bot._last_reac) + Style.RESET_ALL + ' ms (' + str((bot._last_reac) / (GRABZONE * GRABZONE)) + 'ms/pix)')
+CACHED_TITLESCREEN = f"""
+{ f.renderText("Valorant Cheat")[:-3] }
+{ colored(" Created with ♥ by b0kch01! ", "grey", "on_white") }
+{ colored(" USE AT YOUR OWN RISK       ", "grey", "on_yellow") }
 
+Enjoy! :)
+"""
 
 if __name__ == "__main__":
     _hash = sha256(f'{random()}'.encode('utf-8')).hexdigest()
