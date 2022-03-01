@@ -22,6 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
+from termcolor import cprint, colored
 from winsound import Beep
 from colorama import Fore, Style, init
 from mss import base, mss
