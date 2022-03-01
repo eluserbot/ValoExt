@@ -5,7 +5,7 @@ colorama
 keyboard
 pynput
 pyfiglet
-pywin32
+pywin64
 termcolor
 numpy
 d3dshot
